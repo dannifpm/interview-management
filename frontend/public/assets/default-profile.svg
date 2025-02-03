@@ -1,0 +1,15 @@
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="120"
+    height="120"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="profile-picture"
+  >
+    <circle cx="12" cy="7" r="4"></circle>
+    <path d="M5.5 20a7.5 7.5 0 0 1 13 0"></path>
+  </svg>
