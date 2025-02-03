@@ -1,0 +1,42 @@
+.register-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+}
+
+.password-requirements {
+    text-align: left;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.input,
+.select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #fff;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.input:focus,
+.select:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(72, 239, 128, 0.5);
+}
