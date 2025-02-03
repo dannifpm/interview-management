@@ -1,0 +1,108 @@
+.job-details-candidate-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.job-details-candidate-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.job-details-candidate-container p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.message-input {
+    width: 100%;
+    padding: 10px; 
+    margin: 20px 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 100px;
+}
+
+.file-upload {
+    margin: 20px 0;
+}
+
+.upload-label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#cv-upload {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 20px;
+}
+
+.apply-btn,
+.back-btn {
+    flex: 1;
+    text-align: center;
+    padding: 12px 20px; 
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.back-btn {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.back-btn:hover {
+    background-color: #ff3333;
+    transform: scale(1.05);
+}
+
+.requirements-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.requirement-item {
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: #555;
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+}

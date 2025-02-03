@@ -1,0 +1,133 @@
+.job-listings-candidate-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.job-listings-candidate-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #4caf50;
+    box-shadow: 0 4px 12px rgba(0, 200, 100, 0.3);
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.job-item {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.job-info .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5rem;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.job-actions {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+.apply-btn, .save-btn {
+    flex: 1;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px !important;; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.save-btn {
+    background-color: #007bff !important;
+    color: #fff;
+}
+
+.save-btn.saved {
+    background-color: #dc3545 !important; 
+}
+
+.save-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.save-btn.saved:hover {
+    background-color: #218838;
+}

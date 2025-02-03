@@ -1,0 +1,117 @@
+.saved-jobs-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.saved-jobs-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.no-saved-jobs {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 20px;
+}
+
+.saved-jobs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.saved-job-item {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.saved-job-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(229, 228, 228, 0.2);
+}
+
+.saved-job-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.saved-job-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.saved-job-info .description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5rem;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.saved-job-actions {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px; 
+    margin-top: 15px;
+}
+
+.apply-btn, .remove-btn {
+    flex: 1; 
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.apply-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.apply-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
