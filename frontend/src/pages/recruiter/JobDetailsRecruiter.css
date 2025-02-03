@@ -1,0 +1,113 @@
+.job-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.job-details-form {
+    padding: 40px 30px;
+    max-width: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.job-details-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.job-details-form label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.job-details-form input,
+.job-details-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.job-details-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.job-details-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.job-details-form .button-group button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px !important;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.job-details-form .button-group .save-btn {
+    background-color: #007bff;
+}
+
+.job-details-form .button-group .save-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.01);
+}
+
+.job-details-form .button-group .cancel-btn {
+    background-color: #dc3545;
+}
+
+.job-details-form .button-group .cancel-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.01);
+}
+
+.job-details-container .error-message {
+    text-align: center;
+    color: #dc3545;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.job-details-container .loading-message {
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.upcoming-interview {
+    background-color: #fff3cd; 
+    border-left: 5px solid #ffc107; 
+}
+
+.upcoming-badge {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #856404;
+    background-color: #ffeeba;
+    border-radius: 4px;
+    margin-right: 5px;
+}

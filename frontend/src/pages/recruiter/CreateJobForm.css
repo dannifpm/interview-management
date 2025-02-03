@@ -1,0 +1,85 @@
+.create-job-form-container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-job-form {
+    padding: 40px 30px;
+    max-width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.create-job-form-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.create-job-form label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+}
+
+.create-job-form input,
+.create-job-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.create-job-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.create-job-form .button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.create-job-form .button-group button {
+    flex: 1;
+    margin: 0;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+
+.create-job-form .button-group .create-job-btn {
+    background-color: #28a745;
+}
+
+.create-job-form .button-group .create-job-btn:hover {
+    background-color: #218838;
+    transform: scale(1.01);
+}
+
+.create-job-form .button-group .cancel-btn {
+    background-color: #dc3545;
+}
+
+.create-job-form .button-group .cancel-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.01);
+}

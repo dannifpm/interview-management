@@ -1,0 +1,129 @@
+.job-listings-recruiter-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 4.5rem;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+}
+
+.location {
+    font-weight: bold;
+}
+
+.create-job-btn {
+    margin: 20px auto 0;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.create-job-btn:hover {
+    background-color: #218838;
+}
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.job-listings li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.job-listings li:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.job-listings h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.job-listings p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.job-listings .status-open {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.job-listings .status-closed {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.view-edit-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-edit-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

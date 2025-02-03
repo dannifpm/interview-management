@@ -1,0 +1,206 @@
+.job-reports {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(to bottom, #ffffff, #f9f9fb);
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.job-reports h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #28a745;
+  color: #ffffff;
+}
+
+thead th {
+  padding: 15px;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody td {
+  padding: 15px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.filters input[type="text"],
+.filters select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filters input[type="text"]:focus,
+.filters select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+.export-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.export-button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.export-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.view-details-button {
+  padding: 8px 12px;
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.view-details-button:hover {
+  background-color: #138496;
+  transform: scale(1.05);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.modal-body p {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.modal-body ul {
+  list-style-type: disc;
+  margin: 10px 0 0 20px;
+  text-align: left;
+}
+
+.close-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-btn:hover {
+  background-color: #b02a37;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .export-section {
+    justify-content: center;
+  }
+}
+
