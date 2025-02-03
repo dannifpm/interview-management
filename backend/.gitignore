@@ -1,0 +1,35 @@
+# Node.js dependencies
+node_modules/
+
+# TypeScript build/output directory
+dist/
+
+# Environment variables 
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs and debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# Uploads directory 
+uploads/
+
+# System-generated files
+.DS_Store
+Thumbs.db
+
+# Editor-specific settings
+.vscode/
+.idea/
+
+# Lock files 
+package-lock.json
+yarn.lock
